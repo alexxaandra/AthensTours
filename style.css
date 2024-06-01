@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(acropolis-athens-parthenon-view-photograph.webp);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.menu ul li a:hover {
+    
+    color: #f2bb09;
+}
+
+
+.logo { 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('align-justify.png');
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.showcase imag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.8;
+    
+}
+
+.text {
+    position: relative;
+    z-index: 4;
+    padding-top: 150px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5176a033;
+    mix-blend-mode: overlay;
+
+}
+.text h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.text h3 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.text a {
+    position: absolute;
+    background-color: aliceblue;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.text a:hover {
+    letter-spacing: 4px;
+}
+
+.social {
+   position: absolute; 
+    z-index: 5;
+    display: flex;
+    bottom: 0;
+    
+   
+}
+.social li {
+    
+    list-style: none;
+    filter: invert(1);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: -13px;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+.social li:hover{
+    transform: scale(0.8) translateY(-15px);
+}
+.toggle.active {
+    background: url(close-large-line.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.showcase.active {
+    right: 300px;
+    transition: 0.5s;
+}
+.text p {
+    max-width: 800px;
+}

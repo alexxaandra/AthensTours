@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Athens Tours</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+
+        <h2 class="logo">Athens Tours</h2> 
+        <div class="toggle"></div>   
+
+        </header>
+        
+       <!-- **/ <video src="pexels-matheus-bertelli-15171884 (2160p).mp4" muted loop autoplay></video> **/ -->
+       <!-- <img src="acropolis-athens-parthenon-view-photograph.webp" alt=""> -->
+        
+        <div class="overlay"></div>
+        
+        
+        <div class="text">
+             <h2>Not all those who wonder are lost.</h2>
+             <h3>Explore Athens</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi voluptate quidem cum reprehenderit cupiditate autem debitis in amet. Nostrum ratione eum quasi iste sint minus consectetur id, qui est.</p>
+             <a href="#">Explore </a>
+        </div>
+
+        <ul class="social">
+            <li class="facebook"><a href="#"><img src="facebook-fill.png" alt="facebook"></a></li>
+            <li class="twitter"><a href="#"><img src="twitter-x-line.png" alt="x"></a></li>
+            <li class="instagram"><a href=""><img src="instagram-line.png" alt="instagram"></a></li>
+
+        </ul>
+
+        
+    </section>
+    <section>
+     <div class="menu">
+        <ul>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">destinations</a></li>
+          <li><a href="#">news</a></li>
+       </ul>
+     </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
